@@ -2,39 +2,64 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ari's Personal Website</title>
+    <title>Ari Alghifari</title>
     <link rel="stylesheet" href="./assets/styles/main.css" />
   </head>
   <body>
-    <header>
+    <header class="wrapper">
       <nav>
-        <ul>
-          <li><a href="#story">Story</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <a href="#" class="brand">
+          <img src="./assets/images/logo.svg" alt="" />
+          <p>AriAlghifari</p>
+        </a>
+        <ul class="navigation">
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact" class="btn-contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <main class="wrapper">
       <div id="content">
-        <article id="story"></article>
-        <article id="gallery"></article>
-        <article id="contact"></article>
+        <article id="about">
+          <h2 class="title">About</h2>
+          <p>
+            Hello, my name is Ari. I'm a Front-End Web Developer live in a
+            beautiful island in Lombok, Indonesia. You can check latest project
+            in my github pages or you can contact me via contact section. I am
+            currently using Javascript with ReactJs library and
+            Tailwindcss/Bootstrap to build beautiful looking UI by following
+            best practices. I'm open for discussion on any opportunity to
+            collaborate together. Thank you! Terima kasih!
+          </p>
+        </article>
+        <article id="project">
+          <h2 class="title">Project</h2>
+        </article>
+        <article id="contact">
+          <h2 class="title">Contact</h2>
+        </article>
       </div>
 
-      <aside>
+      <aside id="profile">
+        <h2 class="title">Profile</h2>
         <figure>
           <img
             class="profile"
             src="./assets/images/profile.jpg"
             alt="foto profil"
           />
+          <div class="profile-text">
+            <p class="bold">Ari Alghifari</p>
+            <p>Front End Web Developer</p>
+            <p>Mataram, Indonesia</p>
+          </div>
         </figure>
       </aside>
     </main>
 
-    <footer></footer>
+    <footer class="wrapper"></footer>
 
     <script src="./assets/script/main.js"></script>
   </body>

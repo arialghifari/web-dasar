@@ -1,54 +1,134 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-
-/* 
-
-#112B3C
-205375
-
-*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=PT+Serif:wght@700&display=swap");
 
 :root {
-  --dark-blue: #112b3c;
-  --blue: #205375;
-  --orange: #f66b0e;
-  --light-gray: #efefef;
+  --blue: #1d253b;
+  --gray: #eeeff1;
+  --blue-gray: #c6ccdf;
+  --white-gray: #fbfbfb;
 }
 
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   font-family: Inter;
-  background-color: var(--light-gray);
+  background-color: var(--gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
 }
 
 nav {
-  background-color: var(--blue);
+  background-color: var(--gray);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 60px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--blue-gray);
 }
 
 ul {
   display: flex;
-  width: 90%;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   gap: 40px;
 }
 
 ul li a {
-  color: var(--light-gray);
-}
-
-a {
+  color: var(--blue);
   text-decoration: none;
+  font-weight: 500;
 }
 
 img.profile {
-	border-radius: 10px;
+  border-radius: 10px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.brand p {
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.btn-contact {
+  background-color: var(--blue);
+  color: var(--gray);
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.wrapper {
+  max-width: 1440px;
+  width: 100%;
+}
+
+#about,
+#project,
+#contact,
+#profile {
+  margin-top: 40px;
+}
+
+#about p {
+  margin-top: 16px;
+  line-height: 34px;
+  font-size: 20px;
+  color: var(--blue);
+}
+
+#content {
+  width: 65%;
+}
+
+main {
+  display: flex;
+  gap: 80px;
+}
+
+#profile figure {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--blue);
+  font-size: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.title {
+  font-family: "PT Serif";
+  font-size: 40px;
+  color: var(--blue);
+}
+
+/* Medium Screen */
+
+@media screen and (max-width: 768px) {
+  #content {
+    width: 100%;
+  }
+
+  main {
+    flex-direction: column-reverse;
+    gap: 0px;
+  }
 }
